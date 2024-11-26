@@ -5,7 +5,6 @@ $(HOME)/.%: %
 	ln -sf $(DOTFILE_PATH)/$^ $@
 
 git: $(HOME)/.gitconfig $(HOME)/.githelpers $(HOME)/.gitignore
-psql: $(HOME)/.psqlrc
 zsh: $(HOME)/.zshrc $(HOME)/.zsh.d
 
 $(HOME)/bin/tmux-sessionizer:
@@ -49,4 +48,4 @@ zed: $(HOME)/.config/zed/keymap.json $(HOME)/.config/zed/settings.json
 
 imwheel: $(HOME)/.imwheelrc
 
-all: git psql zsh tmux kitty imwheel wezterm ghostty atuin zed
+all: git zsh tmux kitty imwheel wezterm ghostty atuin zed
